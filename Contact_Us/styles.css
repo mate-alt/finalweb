@@ -15,6 +15,10 @@ header {
   top: 0;
   z-index: 1000;
 }
+#onit,
+#onit1 {
+  color: #ff9800;
+}
 header .logo h1 {
   margin: 0;
   font-size: 1.5rem;
@@ -127,4 +131,28 @@ header .logo i {
 
 .contact-form button:hover {
   background-color: #e68900;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger:hover {
+  color: #ff9800;
+}
+
+@media screen and (max-width: 1056px) {
+  .nav-links,
+  .search-bar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

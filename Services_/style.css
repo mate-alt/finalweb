@@ -11,9 +11,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: left;
-  top: 0;
-  z-index: 1000;
+}
+
+#onit,
+#onit1 {
+  color: #ff9800;
 }
 
 header .logo h1 {
@@ -31,7 +33,6 @@ header .logo i {
   display: flex;
   gap: 24px;
   margin: 0;
-  padding: 0;
 }
 
 .nav-links li {
@@ -83,62 +84,63 @@ header .logo i {
   background-color: #e68900;
 }
 
-.game-display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 32px;
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  padding: 32px;
 }
 
-.game-info {
+.service-card {
   background-color: #1e1e1e;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 6px 0px #0c0c0c;
-  max-width: 400px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 16px;
-}
-#onit,
-#onit1 {
-  color: #ff9800;
-}
-.game-info h2 {
-  font-size: 32px;
-  color: #ff9800;
-  margin-bottom: 8px;
+  margin: 0;
 }
 
-.game-info p {
-  font-size: 18px;
-  color: #ffffff;
+.service-card h2 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #bbbbbb;
   margin: 8px 0;
 }
 
-.rating {
-  font-size: 24px;
-  color: #ffd700;
-  margin: 8px 0;
+.service-card i {
+  font-size: 50px;
+  color: #ff9800;
+  margin-bottom: 16px;
 }
 
-.price {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffd700;
+.service-card:hover {
+  transform: scale(1.05);
 }
 
-.game-image {
-  width: 50%;
-  height: 80%;
-  overflow: hidden;
-}
-
-.game-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+button.more-btn {
+  padding: 10px 20px;
+  cursor: pointer;
   border-radius: 8px;
+  box-shadow: 0 6px 0px #0c0c0c;
+  background-color: #1e1e1e;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button.more-btn:hover {
+  transform: scale(1.1);
 }
 
 .hamburger {

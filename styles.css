@@ -78,7 +78,10 @@ header .logo i {
 .search-bar button:hover {
   background-color: #e68900;
 }
-
+#onit,
+#onit1 {
+  color: #ff9800;
+}
 .games-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* hmm */
@@ -149,4 +152,28 @@ button.more-btn {
 
 button.more-btn:hover {
   transform: scale(1.1);
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger:hover {
+  color: #ff9800;
+}
+
+@media screen and (max-width: 1056px) {
+  .nav-links,
+  .search-bar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TopGames</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <h1><i class="fa-solid fa-gamepad"></i> Top Games</h1>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <nav>
-          <ul class="nav-links">
-            <li>
-              <a href="./../index.html"><i class="fa-solid fa-house"></i> Home</a>
-            </li>
-            <li>
-              <a href="./../About_Us/index.html"
-                ><i class="fa-solid fa-circle-user"></i> About Us</a
-              >
-            </li>
-            <li>
-              <a href="./../Services_/index.html"
-                ><i class="fa-solid fa-bell-concierge"></i> Services</a
-              >
-            </li>
-            <li>
-              <a href="./../News_/index.html"
-                ><i class="fa-solid fa-newspaper"></i> News</a
-              >
-            </li>
-            <li>
-              <a href="/Contact_Us/index.html"
-                ><i class="fa-solid fa-envelope"></i> Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </ul>
-    </nav>
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TopGames</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><i class="fa-solid fa-gamepad"></i> Top Games</h1>
+      </div>
+      <nav>
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+            <ul class="nav-links">
+              <li>
+                <a href="./../index.html"
+                  ><i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="./../About_Us/index.html"
+                  ><i class="fa-solid fa-circle-user"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="./../Services_/index.html"
+                  ><i class="fa-solid fa-bell-concierge"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="./../News_/index.html"
+                  ><i class="fa-solid fa-newspaper"></i> News</a
+                >
+              </li>
+              <li>
+                <a href="/Contact_Us/index.html" id="onit"
+                  ><i class="fa-solid fa-envelope" id="onit1"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
 
-  <main>
-    <section id="contact" class="contact-section">
-      <h2>Contact Us</h2>
-      <form action="#" method="POST" class="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-</body>
+    <main>
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

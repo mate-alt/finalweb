@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>News</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - TopGames</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><i class="fa-solid fa-gamepad"></i> Top Games</h1>
+      </div>
+      <nav>
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="../About_Us/index.html"
+              ><i class="fa-solid fa-circle-user"></i> About Us</a
+            >
+          </li>
+          <li>
+            <a href="../Services_/index.html"
+              ><i class="fa-solid fa-bell-concierge"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="./index.html" id="onit1"
+              ><i class="fa-solid fa-newspaper" id="onit"></i> News</a
+            >
+          </li>
+          <li>
+            <a href="../Contact_Us/index.html"
+              ><i class="fa-solid fa-envelope"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="news-container">
+        <div class="news-card">
+          <img
+            src="https://media.wired.com/photos/61f48f02d0e55ccbebd52d15/3:2/w_2400,h_1600,c_limit/Gear-Rant-Game-Family-Plans-1334436001.jpg"
+            alt="News 1"
+          />
+          <div class="news-content">
+            <h3>Exciting Update for Top Games!</h3>
+            <p>
+              Discover the latest features and updates coming to your favorite
+              games. Stay tuned for exclusive insights and developer interviews!
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img
+            src="https://devimages-cdn.apple.com/wwdc-services/articles/images/3D5F5DD3-14F7-4384-94C0-798D15EE7CD7/2048.jpeg"
+            alt="News 2"
+          />
+          <div class="news-content">
+            <h3>official release</h3>
+            <p>top games has been officially been released.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
