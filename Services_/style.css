@@ -124,6 +124,12 @@ header .logo i {
   transform: scale(1.05);
 }
 
+.logo img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+}
+
 button.more-btn {
   padding: 10px 20px;
   cursor: pointer;

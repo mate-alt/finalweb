@@ -145,6 +145,12 @@ header .logo i {
   border: none;
 }
 
+.logo img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+}
+
 .hamburger:hover {
   color: #ff9800;
 }
